@@ -1,0 +1,81 @@
+{
+  "name": "@yomarsanchez/style-guide",
+  "version": "1.0.0",
+  "description": "Seek's engineering style guide to React/NextJS projects",
+  "keywords": [
+    "seek",
+    "seek eslint",
+    "seek config"
+  ],
+  "homepage": "https://github.com/yomarsanchez/style-guide#readme",
+  "bugs": {
+    "url": "https://github.com/yomarsanchez/style-guide/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yomarsanchez/style-guide.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Seek (https://seekglobal.co/)",
+  "exports": {
+    "./eslint/*": "./eslint/*.js",
+    "./prettier": "./prettier/index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "eslint",
+    "prettier",
+    "typescript"
+  ],
+  "scripts": {
+    "eslint:check": "eslint --max-warnings=0 .",
+    "prepare": "husky install",
+    "prettier:check": "prettier --check .",
+    "semantic-release": "semantic-release"
+  },
+  "lint-staged": {
+    "*": "prettier -w --ignore-unknown"
+  },
+  "prettier": "./prettier",
+  "dependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/eslint-parser": "^7.23.3",
+    "@rushstack/eslint-patch": "^1.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-playwright": "^0.19.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.4.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.0",
+    "semantic-release": "^22.0.10",
+    "typescript": "^5.3.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.55.0",
+    "prettier": ">=3.1.0",
+    "typescript": ">=5.3.2"
+  },
+  "packageManager": "pnpm@8.11.0",
+  "publishConfig": {
+    "@yomarsanchez:registry": "https://npm.pkg.github.com"
+  }
+}
