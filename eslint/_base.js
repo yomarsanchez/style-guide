@@ -27,7 +27,7 @@ module.exports = {
   // Global settings used by all overrides.
   settings: {
     // Use the Node resolver by default.
-    // 'import/resolver': { node: {} }
+    'import/resolver': { node: {} }
   },
   // Global parser options.
   parserOptions: {
