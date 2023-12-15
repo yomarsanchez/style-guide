@@ -1,6 +1,6 @@
 {
   "name": "@yomarsanchez/style-guide",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Seek's engineering style guide to React/NextJS projects",
   "keywords": [
     "seek",
@@ -32,7 +32,7 @@
     "eslint:fix": "eslint --fix --max-warnings=0 .",
     "prepare": "husky install",
     "prettier:check": "prettier --check .",
-    "test": "pnpm eslint:check && pnpm prettier:check"
+    "test": "npm run eslint:check && npm run prettier:check"
   },
   "lint-staged": {
     "*": "prettier -w --ignore-unknown"
