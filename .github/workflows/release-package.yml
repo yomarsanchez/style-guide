@@ -20,6 +20,6 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
           scope: '@yomarsanchez'
-      - run: npm publish --only=production --ignore-scripts
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_PKG_TOKEN}}

@@ -30,7 +30,7 @@
   "scripts": {
     "eslint:check": "eslint --max-warnings=0 .",
     "eslint:fix": "eslint --fix --max-warnings=0 .",
-    "prepare": "husky install",
+    "husky:init": "husky install",
     "prettier:check": "prettier --check .",
     "test": "npm run eslint:check && npm run prettier:check"
   },
