@@ -31,6 +31,13 @@ yarn add --dev @yomarsanchez/style-guide
 > Some of our ESLint configs require peer dependencies. We'll note those
 > alongside the available configs in the [ESLint](#eslint) section.
 
+If this is your first time using `@yomarsanchez/style-guide`, you'll need to create a `.npmrc` file in the root of your project. This file is used to specify the registry where `npm` will look for the `@yomarsanchez/` packages (in this case, GitHub Packages).
+
+```sh
+//npm.pkg.github.com/:_authToken=TOKEN
+@yomarsanchez:registry=https://npm.pkg.github.com
+```
+
 ## Usage
 
 Prettier and ESLint are a peer-dependency of this package, and should be installed in the root of your project. See [Prettier documentation](https://prettier.io/docs/en/install.html) and [ESLint documentation](https://eslint.org/docs/latest/use/getting-started#manual-set-up)
